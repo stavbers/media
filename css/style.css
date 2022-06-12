@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 25px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.div-1 {
+  width: 400px;
+}
+
+.div-2 {
+  width: 600px;
+}
+
+.div-3 {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 213, 253, 1) 100%);
+}
+
+.div-4 {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 213, 253, 1) 100%);
+}
+
+.div-5 {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 45, 45, 1) 100%);
+  margin-right: 10px;
+}
+.div-5:last-child {
+  margin-right: 0;
+}
+
+.div-6 {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 45, 45, 1) 100%);
+}
+
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+  .div-1 {
+    width: 300px;
+  }
+  
+  .div-2 {
+    width: 500px;
+  }
+  .div-3 {
+    width: 280px;
+  }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+  .div-1 {
+    width: 270px;
+    margin-right: 50px;
+  }
+  .div-3 {
+    width: 270px;
+    margin-right: 15px;
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+}
